@@ -76,9 +76,7 @@ function Home() {
           name="passLength"
           id="passLenInput"
           value={passwordLength}
-          max={20}
-          min={6}
-          onInput={(e) => setPasswordLength(e.currentTarget.value.length)}
+          onInput={(e) => setPasswordLength(e.currentTarget.value)}
         />
       </div>
       <div className="row">
