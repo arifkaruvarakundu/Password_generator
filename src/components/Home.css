@@ -71,7 +71,7 @@ body {
     border: none;
     outline: none;
 }
-
+  
 .row {
     display: flex;
     justify-content: space-between;
