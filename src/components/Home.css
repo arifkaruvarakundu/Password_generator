@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #C5CBE3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 60vw;
+    height: 450px;
+    background: #0091cd;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.wrapper>h2 {
+    text-align: center;
+}
+
+.output {
+    height: 12%;
+    background: white;
+    border-radius: 5px;
+    margin: 1rem 0px;
+    color: black;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.output>h3 {
+    padding: 0px 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.output .copyBtn {
+    width: 15%;
+    height: 100%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0rem 0.5rem;
+    background: #9f9fa3;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+}
+
+#passLenInput {
+    width: 15%;
+    outline: none;
+    padding: 0.2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.row>input[type=number] {
+    text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.row>input[type=checkbox] {
+    height: 20px;
+    width: 15%;
+}
+
+.row>input[type=checkbox]:checked {
+    accent-color: white;
+
+}
+
+.row>p {
+    max-lines: 1;
+    font-size: 1rem;
+
+}
+
+#generateBtn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background: #ff4c4c;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+#generateBtn:hover {
+    outline-offset: -8px;
+    outline: 3px solid white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 90vw;
+    }
+
+    .output .copyBtn {
+        font-size: 0.8rem;
+    }
+}
